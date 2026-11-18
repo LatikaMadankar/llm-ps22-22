@@ -1,53 +1,45 @@
-# Flashcard Generator
+# 📚 Flashcard Generator
 
-An LLM-based study tool that converts study notes into question-answer flashcards for quick revision.
+## 📌 Problem Statement
 
-## Problem Statement
+Students often deal with large volumes of study material and need quick, effective revision tools. The **Flashcard Generator** uses a Large Language Model (Google Gemini) to automatically transform raw study notes into structured question-answer flashcards. Users can review cards interactively through a Streamlit web interface and export their decks as a downloadable CSV file.
 
-Students often need quick revision material from lengthy study notes. This project uses a Large Language Model (LLM) to automatically convert notes into useful question-answer flashcards.
+---
 
-## Features
+## 🚀 How to Run
 
-- Convert study notes into flashcards using Gemini API
-- Generate 3, 5, 7, or 10 flashcards
-- Question-answer format
-- Reveal answer functionality
-- Previous and Next navigation
-- Progress indicator
-- Download flashcards as CSV
-- Modern Streamlit interface
-- JSON structured LLM output
-- Pandas DataFrame processing
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/LatikaMadankar/llm-ps22-22.git
+   cd llm-ps22-22
+   ```
 
-## Technologies Used
+2. **Install the required dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-- Python
-- Streamlit
-- Google Gemini API
-- Pandas
-- JSON
-- python-dotenv
+3. **Configure your Gemini API key:**
+   Create a `.env` file in the project root directory and add your key:
+   ```env
+   GEMINI_API_KEY=your_api_key_here
+   ```
 
-## Project Flow
+4. **Launch the Streamlit application:**
+   ```bash
+   streamlit run app.py
+   ```
+   Or
+   ```bash
+   python -m streamlit run app.py
+   ```
 
-Study Notes
-      ↓
-Prompt Engineering
-      ↓
-Gemini LLM
-      ↓
-JSON Response
-      ↓
-Pandas DataFrame
-      ↓
-Flashcard UI
-      ↓
-CSV Download
+---
 
-## Installation
+## 📸 Screenshots
 
-Clone the repository:
+### 1. Flashcard Generation
+![Flashcard Generation](screenshots/flashcard_generation.png)
 
-```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
-cd FlashcardGenerator
+### 2. Answer Reveal & CSV Export
+![Answer Reveal and CSV Export](screenshots/flashcard_answer.png)
